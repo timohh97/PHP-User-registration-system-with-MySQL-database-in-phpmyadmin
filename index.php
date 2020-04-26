@@ -10,7 +10,7 @@
     <form action="register.php" method="post">
       <input type="text" name="username" placeholder="username" required><br>
       <br>
-      <input type="password" name="password1" placeholder="password" required><br>
+      <input type="password" name="password1" placeholder="password" required minlength="6"><br>
       <br>
       <input type="password" name="password2" placeholder="repeat password" required><br>
       <br>

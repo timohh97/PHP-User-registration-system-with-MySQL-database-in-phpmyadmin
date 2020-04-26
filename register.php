@@ -47,4 +47,5 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 }
 
 ?>
+<br>
 <a  href="index.php">Go back</a>
