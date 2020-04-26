@@ -2,10 +2,10 @@
 
 $database = new mysqli('localhost','root','','besucher') or die();
 
-if($_SERVER['REQUEST_METHOD']=='POST')
-{
   if($_POST['password1']==$_POST['password2'])
   {
+
+    $flag = true;
 
     $newusername = $_POST['username'];
 
@@ -13,23 +13,24 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 
     $column= $database->query($queryForIdCheck);
 
-    $array = Array();
+    $usernameArray = Array();
 
     while($result = $column->fetch_assoc())
     {
-       $array[] = $result['username'];
+       $usernameArray[] = $result['username'];
     }
 
-    foreach($array as $element)
+    foreach($usernameArray as $element)
     {
       if($element==$newusername)
       {
         echo "This username already exists!";
-         die();
+        $flag=false;
       }
     }
 
-
+    if($flag)
+    {
     $password = $_POST['password1'];
     $id = rand();
 
@@ -38,13 +39,13 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     $database->query($queryForInsert);
 
     echo "Created account successfully!";
+    }
 
 
   }
   else {
     echo "Passwords are not equal!";
   }
-}
 
 ?>
 <br>

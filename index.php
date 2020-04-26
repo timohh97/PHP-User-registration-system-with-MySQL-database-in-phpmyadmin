@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
-    <title>Registration</title>
+    <title>User registration</title>
   </head>
   <body>
     <h1>Create new account</h1>
@@ -17,5 +17,6 @@
       <button type="submit" name="submit">Register</button>
     </form>
     <br>
+    <a href="login.php">I already have an account</a>
   </body>
 </html>
