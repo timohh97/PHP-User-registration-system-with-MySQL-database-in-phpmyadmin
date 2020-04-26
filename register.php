@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $database = new mysqli('localhost','root','','besucher') or die();
 
