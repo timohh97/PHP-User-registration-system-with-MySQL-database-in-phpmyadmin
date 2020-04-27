@@ -18,5 +18,7 @@
     </form>
     <br>
     <a href="login.php">I already have an account</a>
+    <br>
+    <a href="serverLoginPage.php">Show users</a>
   </body>
 </html>
