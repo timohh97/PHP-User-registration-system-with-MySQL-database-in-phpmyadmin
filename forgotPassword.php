@@ -12,7 +12,7 @@
       <label>Your email:</label><br>
       <input type="text" class="email" placeholder="Your email" required><br>
       <input id="confirm" type="hidden" name="_cc" value="" />
-      <input id="linkForCreatingNewPassword" type="hidden" value="Test" />
+      <input type="hidden" name="_subject" value="Reset link: http://localhost:8000/createNewPassword.php" />
       <br>
       <button class="resetPasswordbutton" type="submit">Reset password</button>
     </form>

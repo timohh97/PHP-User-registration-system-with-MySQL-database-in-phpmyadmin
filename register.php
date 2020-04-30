@@ -9,9 +9,9 @@ $database = new mysqli('localhost','root','','besucher') or die();
 
     $newusername = $_POST['username'];
 
-    $queryForIdCheck = "SELECT username FROM user";
+    $queryForUsernameCheck = "SELECT username FROM user";
 
-    $column= $database->query($queryForIdCheck);
+    $column= $database->query($queryForUsernameCheck);
 
     $usernameArray = Array();
 
