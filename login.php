@@ -15,7 +15,9 @@
       <button type="submit" name="submit">Login</button>
     </form>
     <br>
+    <a href="forgotPassword.php">I forgot my password</a>
+    <br>
+    <br>
     <a href="index.php">Create new account</a>
-
   </body>
 </html>
